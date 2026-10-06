@@ -1,22 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Goudy Bookletter 1911", sans-serif;
     color:blanchedalmond; 
-}
-
-
-#hero{
-
-    width: 500px;
-    height: 500px;
-}
-
-.hero-image{
-
-    background-image: url(images/musjid.png);
-    width: 400px;
-    height: 400px;
+   padding: 10px 20px;
     
+   background: rgb(228, 228, 228);
+
 }
+
+#content{
+    border-radius: 50px;
+    overflow: hidden;
+    background: white;
+    border: 10px solid white;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background-image: url("images/musjid.png");
+    background-size: contain;
+    text-align: center; 
+}
+
+
+
 
 #activities{
 
