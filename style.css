@@ -1,25 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Goudy Bookletter 1911", sans-serif;
-    color:blanchedalmond; 
-   padding: 10px 20px;
-    
-   background: rgb(228, 228, 228);
+    color: blue;
+    padding: 10px 20px;
+    background: rgb(228, 228, 228);
 
 }
 
-#content{
+#content {
     border-radius: 50px;
     overflow: hidden;
     background: white;
     border: 10px solid white;
+    
 }
-#hero{
+
+#header{
+
+    color: red;
+}
+
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,13 +33,86 @@ body{
     height: 400px;
     background-image: url("images/musjid.png");
     background-size: contain;
-    text-align: center; 
+    text-align: center;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 
 
 
-#activities{
+.activities {
+  /* I want a clear section outline between the two other sections DONE
+     I want the images to be spaced out evenly along the horizontal axis
+    I want the header text to be centered on top of the images
+    I want description text to be under each image, aligned with each image
+    I want the section outline to have rounded edges DONE
+    I want the images to enlarge slightly when you hover over them
+    activities: border, background color, flexbox, header
+  */
 
     background-color: aqua;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#activities-header{
+
+
+   background-color: #2b2839;
+   
+
+
+}
+
+#activity-images{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px; 
+    width: 100%;
+    
+
+   
+}
+
+.activity-pictures{
+ border: 10px solid #2b2839;
+    border-radius: 50%;
+
+}
+
+.card {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background-size: contain;
+    text-align: center;
+    background-color: bisque;
+    margin-top: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ddebf8;
+    color: #2b2839;
+    border-bottom: 6px solid #d8cefe;
 }
